@@ -1,0 +1,385 @@
+object Form1: TForm1
+  Left = 207
+  Top = 412
+  Width = 729
+  Height = 606
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object BoldNavigator1: TBoldNavigator
+    Left = 8
+    Top = 128
+    Width = 192
+    Height = 25
+    BoldHandle = BoldListHandle1
+    TabOrder = 0
+    ImageIndices.nbFirst = -1
+    ImageIndices.nbPrior = -1
+    ImageIndices.nbNext = -1
+    ImageIndices.nbLast = -1
+    ImageIndices.nbInsert = -1
+    ImageIndices.nbDelete = -1
+    ImageIndices.nbMoveUp = -1
+    ImageIndices.nbMoveDown = -1
+    DeleteQuestion = 'Delete "%1:s"?'
+    UnlinkQuestion = 'Unlink "%1:s" from "%2:s"?'
+    RemoveQuestion = 'Remove "%1:s" from the list?'
+  end
+  object BoldGrid1: TBoldGrid
+    Left = 8
+    Top = 8
+    Width = 320
+    Height = 120
+    AddNewAtEnd = False
+    BoldAutoColumns = False
+    BoldShowConstraints = False
+    BoldHandle = BoldListHandle1
+    BoldProperties.NilElementMode = neNone
+    Columns = <
+      item
+        Color = clBtnFace
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+      end
+      item
+        BoldProperties.Expression = 'iD_Place'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Title.Caption = 'ID Place'
+      end
+      item
+        BoldProperties.Expression = 'iD_Room'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Title.Caption = 'ID Room'
+      end
+      item
+        BoldProperties.Expression = 'place_number'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Title.Caption = 'Place number'
+      end>
+    DefaultRowHeight = 17
+    EnableColAdjust = False
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    ColWidths = (
+      17
+      64
+      64
+      64)
+  end
+  object BoldGrid2: TBoldGrid
+    Left = 336
+    Top = 8
+    Width = 320
+    Height = 120
+    AddNewAtEnd = False
+    BoldAutoColumns = False
+    BoldShowConstraints = False
+    BoldHandle = BoldListHandle2
+    BoldProperties.NilElementMode = neNone
+    Columns = <
+      item
+        Color = clBtnFace
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+      end
+      item
+        BoldProperties.Expression = 'passport'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Title.Caption = 'Passport'
+      end
+      item
+        BoldProperties.Expression = 'fIO'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Title.Caption = 'FIO'
+      end
+      item
+        BoldProperties.Expression = 'iD_Client'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Title.Caption = 'ID Client'
+      end>
+    DefaultRowHeight = 17
+    EnableColAdjust = False
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    ColWidths = (
+      17
+      64
+      64
+      64)
+  end
+  object BoldNavigator2: TBoldNavigator
+    Left = 336
+    Top = 128
+    Width = 192
+    Height = 25
+    BoldHandle = BoldListHandle2
+    TabOrder = 3
+    ImageIndices.nbFirst = -1
+    ImageIndices.nbPrior = -1
+    ImageIndices.nbNext = -1
+    ImageIndices.nbLast = -1
+    ImageIndices.nbInsert = -1
+    ImageIndices.nbDelete = -1
+    ImageIndices.nbMoveUp = -1
+    ImageIndices.nbMoveDown = -1
+    DeleteQuestion = 'Delete "%1:s"?'
+    UnlinkQuestion = 'Unlink "%1:s" from "%2:s"?'
+    RemoveQuestion = 'Remove "%1:s" from the list?'
+  end
+  object BoldModel1: TBoldModel
+    UMLModelMode = ummNone
+    Boldify.EnforceDefaultUMLCase = False
+    Boldify.DefaultNavigableMultiplicity = '0..1'
+    Boldify.DefaultNonNavigableMultiplicity = '0..*'
+    Left = 16
+    Top = 208
+    Model = (
+      'VERSION 19'
+      '(Model'
+      #9'"New_Model"'
+      #9'"New_ModelRoot"'
+      #9'""'
+      #9'""'
+      
+        #9'"_BoldInternal.flattened=True,_Boldify.boldified=True,_BoldInte' +
+        'rnal.ModelErrors=,Bold.DelphiName=<Name>,Bold.RootClass=New_Mode' +
+        'lRoot"'
+      #9'(Classes'
+      #9#9'(Class'
+      #9#9#9'"New_ModelRoot"'
+      #9#9#9'"<NONE>"'
+      #9#9#9'TRUE'
+      #9#9#9'FALSE'
+      #9#9#9'""'
+      #9#9#9'""'
+      #9#9#9'"persistence=persistent"'
+      #9#9#9'(Attributes'
+      #9#9#9')'
+      #9#9#9'(Methods'
+      #9#9#9')'
+      #9#9')'
+      #9#9'(Class'
+      #9#9#9'"Client"'
+      #9#9#9'"New_ModelRoot"'
+      #9#9#9'TRUE'
+      #9#9#9'FALSE'
+      #9#9#9'""'
+      #9#9#9'""'
+      #9#9#9'"persistence=persistent"'
+      #9#9#9'(Attributes'
+      #9#9#9#9'(Attribute'
+      #9#9#9#9#9'"Passport"'
+      #9#9#9#9#9'"Float"'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"derived=False,persistence=persistent"'
+      #9#9#9#9')'
+      #9#9#9#9'(Attribute'
+      #9#9#9#9#9'"FIO"'
+      #9#9#9#9#9'"String"'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"derived=False,persistence=persistent"'
+      #9#9#9#9')'
+      #9#9#9#9'(Attribute'
+      #9#9#9#9#9'"ID Client"'
+      #9#9#9#9#9'"Int"'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"derived=False,persistence=persistent"'
+      #9#9#9#9')'
+      #9#9#9')'
+      #9#9#9'(Methods'
+      #9#9#9')'
+      #9#9')'
+      #9#9'(Class'
+      #9#9#9'"Place"'
+      #9#9#9'"New_ModelRoot"'
+      #9#9#9'TRUE'
+      #9#9#9'FALSE'
+      #9#9#9'""'
+      #9#9#9'""'
+      #9#9#9'"persistence=persistent"'
+      #9#9#9'(Attributes'
+      #9#9#9#9'(Attribute'
+      #9#9#9#9#9'"ID Place"'
+      #9#9#9#9#9'"Int"'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"derived=False,persistence=persistent"'
+      #9#9#9#9')'
+      #9#9#9#9'(Attribute'
+      #9#9#9#9#9'"ID Room"'
+      #9#9#9#9#9'"Int"'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"derived=False,persistence=persistent"'
+      #9#9#9#9')'
+      #9#9#9#9'(Attribute'
+      #9#9#9#9#9'"Place number"'
+      #9#9#9#9#9'"Integer"'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"derived=False,persistence=persistent"'
+      #9#9#9#9')'
+      #9#9#9')'
+      #9#9#9'(Methods'
+      #9#9#9')'
+      #9#9')'
+      #9#9'(Class'
+      #9#9#9'"SPR"'
+      #9#9#9'"New_ModelRoot"'
+      #9#9#9'TRUE'
+      #9#9#9'FALSE'
+      #9#9#9'""'
+      #9#9#9'""'
+      #9#9#9'"persistence=persistent"'
+      #9#9#9'(Attributes'
+      #9#9#9')'
+      #9#9#9'(Methods'
+      #9#9#9')'
+      #9#9')'
+      #9')'
+      #9'(Associations'
+      #9#9'(Association'
+      #9#9#9'"SPR"'
+      #9#9#9'"SPR"'
+      #9#9#9'""'
+      #9#9#9'""'
+      #9#9#9'"persistence=persistent,derived=False,Bold.DelphiName=<Name>"'
+      #9#9#9'FALSE'
+      #9#9#9'(Roles'
+      #9#9#9#9'(Role'
+      #9#9#9#9#9'"Client"'
+      #9#9#9#9#9'TRUE'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'"Place"'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"1..*"'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'0'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'0'
+      #9#9#9#9#9'"Bold.Embed=False"'
+      #9#9#9#9#9'(Qualifiers'
+      #9#9#9#9#9')'
+      #9#9#9#9')'
+      #9#9#9#9'(Role'
+      #9#9#9#9#9'"Place"'
+      #9#9#9#9#9'TRUE'
+      #9#9#9#9#9'FALSE'
+      #9#9#9#9#9'"Client"'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'"1..1"'
+      #9#9#9#9#9'""'
+      #9#9#9#9#9'0'
+      #9#9#9#9#9'2'
+      #9#9#9#9#9'0'
+      #9#9#9#9#9'"Bold.Embed=False"'
+      #9#9#9#9#9'(Qualifiers'
+      #9#9#9#9#9')'
+      #9#9#9#9')'
+      #9#9#9')'
+      #9#9')'
+      #9')'
+      ')')
+  end
+  object BoldSystemHandle1: TBoldSystemHandle
+    IsDefault = True
+    AutoActivate = True
+    SystemTypeInfoHandle = BoldSystemTypeInfoHandle1
+    Active = False
+    PersistenceHandle = BoldPersistenceHandleFileXML1
+    Left = 56
+    Top = 208
+  end
+  object BoldSystemTypeInfoHandle1: TBoldSystemTypeInfoHandle
+    BoldModel = BoldModel1
+    UseGeneratedCode = False
+    Left = 104
+    Top = 208
+  end
+  object BoldListHandle1: TBoldListHandle
+    RootHandle = BoldSystemHandle1
+    Expression = 'Place.allInstances'
+    Left = 200
+    Top = 128
+  end
+  object BoldListHandle2: TBoldListHandle
+    RootHandle = BoldSystemHandle1
+    Expression = 'Client.allInstances'
+    Left = 528
+    Top = 128
+  end
+  object BoldPersistenceHandleFileXML1: TBoldPersistenceHandleFileXML
+    FileName = '1.xml'
+    CacheData = False
+    BoldModel = BoldModel1
+    Left = 152
+    Top = 208
+  end
+end
